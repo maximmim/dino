@@ -1,14 +1,7 @@
 const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
-const dinoq = document.getElementById("dinoq");
-const dinow = document.getElementById("dinow");
+const cactus1= document.getElementById("cactus1");
 
-dino.style.display = "none"
-setTimeout(dinoq.style.display = "block",1000);
-setTimeout(dinoq.style.display = "none",1000);
-setTimeout(dinow.style.display = "block",1000);
-setTimeout(dinow.style.display = "none",1000);
-setTimeout(dino.style.display = "block",1000);
 
 let i = 1;
 
@@ -32,15 +25,14 @@ jump();
 let isAlite = setInterval (function(){
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"))
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"))
-    
-    if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
+    let cactusLeft1 = parseInt(window.getComputedStyle(cactus1).getPropertyValue("left"))
+        if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
         alert("Жаль ти проиграл :(")
         document.location.replace('reset.html');
     }   
-    
-    
-    
    
-},10)    
 
 
+
+
+},10)
