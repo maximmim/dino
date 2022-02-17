@@ -38,7 +38,8 @@
     position: relative;
     top: 110px;
     left: 580px;
-    animation: cactusMov 10000s infinite linear;
+    animation: cactusMov 2s infinite linear;
+    display: none;
 }
 #cactus1 {
     width: 30px;
@@ -47,6 +48,7 @@
     background-size: 29px 30px;
     position: relative;
     top: 80px;
+    display: none;
     left: 695px;
     animation: cactusMov 5s infinite linear;
 
@@ -54,7 +56,8 @@
 
 #fe {
     position: absolute;
-    left: 1200px;
+    left: 100px;
+    top: 140px;
     font-size: 30px;
 
 
@@ -105,8 +108,8 @@
     position: absolute;
 
         top:250px;
-        left: 700px;
-        width: 480px;
+        left: 600px;
+        width: 180px;
         height: 70px;
 
 
