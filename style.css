@@ -39,7 +39,6 @@
     top: 110px;
     left: 580px;
     animation: cactusMov 2s infinite linear;
-    display: none;
 }
 #cactus1 {
     width: 30px;
