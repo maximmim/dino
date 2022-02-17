@@ -114,3 +114,8 @@
 
 
 }
+@media (max-width: 768px) {
+ #qwe {
+     display:none;
+ }   
+}
