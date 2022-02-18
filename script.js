@@ -13,6 +13,7 @@ const dont1 = document.getElementById("dont1")
 const dont2 = document.getElementById("dont2")
 const dont3 = document.getElementById("dont3")
 
+const daac = document.getElementById("dac")
 
 let live = 3;
 
@@ -57,14 +58,18 @@ document.addEventListener("keydown" ,  function(event) {
 let isAlite = setInterval (function(){
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"))
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"))
-    let cactusLeft1 = parseInt(window.getComputedStyle(cactus1).getPropertyValue("left"))
+    let c = parseInt(window.getComputedStyle(daac).getPropertyValue("left"))
 
     if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) 
     { alert("ТИ ПРОИГРАЛИ")
       document.location.replace('reset.html');
     }
  
-
+    if (c < 50 && c > 0 && dinoTop >= 140) 
+    { alert("ТИ ПРОИГРАЛИ")
+      document.location.replace('reset.html');
+    }
+ 
 },10)
 function aw() {
 livee.classList.add("love")

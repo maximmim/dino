@@ -144,7 +144,7 @@
     background-size: 41px 40px;
     position: absolute;
     left: 665px;
-    top: 140px;
+    top: 150px;
     animation: gor 8s infinite linear;
     }
 .love {
@@ -228,22 +228,42 @@
     }
 }
 
+
 #qwe {
     position: absolute;
-
-        top:250px;
-        left: 600px;
-        width: 180px;
-        height: 70px;
-}
-#qw {
-    position: absolute;
-
+    top:250px;
+    left: 600px;
+    width: 180px;
+    height: 70px;
+    padding: 0px; /* Поля вокруг текста */
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+    display: inline-block;
+      }
+    #qwe:hover {
+    background-position: right center;
+    }
+    #qw {
+        position: absolute;
         top:250px;
         left: 150px;
         width: 180px;
         height: 70px;
-}
+        padding: 0px; /* Поля вокруг текста */
+        border-radius: 25px;
+        background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+        background-size: 200% auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+        transition: .5s;
+        display: inline-block;
+          }
+        #qw:hover {
+        background-position: right center;
+        }
+
 @media (max-width: 768px) {
  #qwe {
      display:none;
