@@ -145,7 +145,7 @@
     position: absolute;
     left: 665px;
     top: 140px;
-    animation: gor 10s infinite linear;
+    animation: gor 8s infinite linear;
     }
 .love {
     animation: love 4s infinite linear;
@@ -159,7 +159,7 @@
     top: 80px;
     display: none;
     left: 695px;
-    animation: cactusMov 5s infinite linear;
+    animation: cactusMov 2s infinite linear;
 
 }
 
