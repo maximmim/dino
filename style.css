@@ -232,7 +232,7 @@
 #qwe {
     position: absolute;
     top:250px;
-    left: 500px;
+    left: 600px;
     width: 180px;
     height: 70px;
     padding: 0px; /* Поля вокруг текста */
@@ -264,8 +264,3 @@
         background-position: right center;
         }
 
-@media (max-width: 768px) {
- #qwe {
-     display:none;
- }   
-}
