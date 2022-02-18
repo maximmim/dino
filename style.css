@@ -9,18 +9,22 @@
     height: 50px;
     background-image: url(img/googe_dino.png);
     background-size: 50px 50px;
+
     position: relative;
     top: 150px;
+
 }
-#dinoq {
-    width: 50px;
-    height: 50px;
-    background-image: url(img/googe_dno.png);
-    background-size: 50px 50px;
+#dinodown {
+    width: 75px;
+    height: 36px;
+    background-image: url(img/T-Rex_Game._-_Google_Chrome_18.02.2022_8_32_12.png);
+    background-size: 73px 37px;
     position: relative;
-    top: 150px;
+    top: 165px;
     display: none;
+
 }
+
 #dinow {
     width: 50px;
     height: 50px;
@@ -29,7 +33,9 @@
     position: relative;
     top: 150px;
     display: none;
+    animation: runn 1s infinite linear;
 }
+
 #cactus {
     width: 20px;
     height: 40px;
@@ -72,7 +78,6 @@
 .jump {
     animation: jump 0.3s linear;
 }
-
 @keyframes jump {
     0% {
         top: 150px;
@@ -110,9 +115,14 @@
         left: 600px;
         width: 180px;
         height: 70px;
+}
+#qw {
+    position: absolute;
 
-
-
+        top:250px;
+        left: 150px;
+        width: 180px;
+        height: 70px;
 }
 @media (max-width: 768px) {
  #qwe {
