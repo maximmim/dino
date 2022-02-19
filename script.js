@@ -59,10 +59,10 @@ let isAlite = setInterval (function(){
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"))
     let c = parseInt(window.getComputedStyle(tg).getPropertyValue("left"))
 
-    //if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) 
-    //{ alert("ТИ ПРОИГРАЛИ")
-    //  document.location.replace('reset.html');
-    //}
+    if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) 
+    { alert("ТИ ПРОИГРАЛИ")
+      document.location.replace('reset.html');
+    }
  
     if (c < -50 && c > 0 && dinoTop >= -140) 
     { 
