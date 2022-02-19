@@ -13,7 +13,7 @@ const dont1 = document.getElementById("dont1")
 const dont2 = document.getElementById("dont2")
 const dont3 = document.getElementById("dont3")
 
-const daac = document.getElementById("dac")
+const tg = document.getElementById("tg")
 
 let live = 3;
 
@@ -28,8 +28,7 @@ function jump() {
         dino.style.display = "block"
         dinodown.style.display = "none"
         cactus.style.top = "110px"
-        i = i+1;
-        $('#fe').text(i)
+
     }
     setTimeout(function(){
         dino.classList.remove("jump")
@@ -58,16 +57,18 @@ document.addEventListener("keydown" ,  function(event) {
 let isAlite = setInterval (function(){
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"))
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"))
-    let c = parseInt(window.getComputedStyle(daac).getPropertyValue("left"))
+    let c = parseInt(window.getComputedStyle(tg).getPropertyValue("left"))
 
-    if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) 
-    { alert("ТИ ПРОИГРАЛИ")
-      document.location.replace('reset.html');
-    }
+    //if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) 
+    //{ alert("ТИ ПРОИГРАЛИ")
+    //  document.location.replace('reset.html');
+    //}
  
-    if (c < 50 && c > 0 && dinoTop >= 140) 
-    { alert("ТИ ПРОИГРАЛИ")
-      document.location.replace('reset.html');
+    if (c < -50 && c > 0 && dinoTop >= -140) 
+    { 
+        alert(123)
+        i = i+1;
+        $('#fe').text(i)
     }
  
 },10)
