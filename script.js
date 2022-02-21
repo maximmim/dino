@@ -57,19 +57,13 @@ document.addEventListener("keydown" ,  function(event) {
 let isAlite = setInterval (function(){
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"))
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"))
-    let c = parseInt(window.getComputedStyle(tg).getPropertyValue("left"))
-
+    
     if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) 
     { alert("ТИ ПРОИГРАЛИ")
       document.location.replace('reset.html');
     }
  
-    if (c < -50 && c > 0 && dinoTop >= -140) 
-    { 
-        alert(123)
-        i = i+1;
-        $('#fe').text(i)
-    }
+  
  
 },10)
 function aw() {
