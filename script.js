@@ -73,7 +73,7 @@ function logs() {
     document.getElementById("qqe").style.display = "none";
     document.getElementById("log").style.display = "block";
 }
-setTimeout(logs, 9000)
+setTimeout(logs, 7000)
 
   window.onload = function () {
     document.body.classList.add('loaded_hiding');
