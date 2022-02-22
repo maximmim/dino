@@ -2,7 +2,7 @@ const dino = document.getElementById("dino");
 const dinoan1 = document.getElementById("dinow");
 const dinoan2 = document.getElementById("dinoh");
 const cactus = document.getElementById("cactus");
-const cactus1= document.getElementById("cactus1");
+const doc = document.getElementById("dac");
 const dinodown = document.getElementById("dinodown")
 
 const livee = document.getElementById("live")
@@ -22,6 +22,8 @@ let i = 1;
 function jump() {
     if(dino.classList != "jump" && dinodown.classList != "jump"){
         dino.classList.add("jump")
+        i = i+1;
+        $('#fe').text(i)
         dinoan1.classList.add("jump")
         dinoan2.classList.add("jump")
         dinodown.classList.add("jump")
@@ -36,6 +38,7 @@ function jump() {
     }, 700)
 
 }
+let da = false;
 let downn = false;
 function down() {
     dino.style.display = "none"
@@ -57,19 +60,56 @@ document.addEventListener("keydown" ,  function(event) {
 let isAlite = setInterval (function(){
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"))
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"))
-    
+
+if (da == true) {
     if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) 
     { alert("ТИ ПРОИГРАЛИ")
       document.location.replace('reset.html');
     }
- 
-  
- 
-},10)
-function aw() {
-livee.classList.add("love")
 }
 
+function logs() {
+    da = true;
+    document.getElementById("qqe").style.display = "none";
+    document.getElementById("log").style.display = "block";
+}
+setTimeout(logs, 3000)
+
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+  window.onload = function () {
+    document.body.classList.add('loaded');
+  }
+},10)
+function toe() {
+    dino.classList.remove("jump")
+    document.getElementById("jum").style.display = "none"
+    document.getElementById("sit").style.display = "none"
+    cactus.classList.remove("cactusmov")
+    document.getElementById("f").style.display = "none"
+    doc.classList.remove("doc")
+    document.getElementById("ff").style.display = "block"
+    
+
+}
+function teo() {
+    dino.classList.add("jump")
+    document.getElementById("jum").style.display = "block"
+    document.getElementById("sit").style.display = "block"
+    cactus.classList.add("cactusmov")
+    document.getElementById("f").style.display = "block"
+    doc.classList.add("doc")
+    document.getElementById("ff").style.display = "none"
+}
+function aw() {
+livee.classList.add("love");
+}
+toe();
 
 //if (live == 2) {
 //live1.style.display = "none"

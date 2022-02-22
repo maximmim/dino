@@ -1,3 +1,113 @@
+
+.preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: #e0e0e0;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+  }
+  
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+  }
+  
+  .preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: rgb(51, 122, 183);
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+  }
+  
+  .preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+  }
+  
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes preloader-bounce {
+  
+    0%,
+    100% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+
+  
+  .preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    /* фоновый цвет */
+    background: #e0e0e0;
+    z-index: 1001;
+  }
+  
+  .preloader__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+  }
+  
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
 .game {
     width: 600px;
     border-bottom: 1px solid #000;
@@ -125,8 +235,18 @@
     position: relative;
     top: 110px;
     left: 580px;
+    }
+.cactusmov {
     animation: cactusMov 2s infinite linear;
 }
+#f {
+    position: absolute;
+    left: 365px;
+    top: -8px;
+    width: 72px;
+}
+
+    
 #live {
     width: 40px;
     height: 40px;
@@ -144,10 +264,17 @@
     background-size: 41px 40px;
     position: absolute;
     left: 665px;
-    top: 150px;
-    animation: gor 8s infinite linear;
+    top: 146px;
+    opacity: .3;
     }
-.love {
+.log {
+    display: none;
+}
+.doc {    
+    animation: gor 8s infinite linear;
+ }
+
+    .love {
     animation: love 4s infinite linear;
 }
 #hed {
@@ -168,7 +295,7 @@ background: rgb(247, 247, 247); /* Цвет фона */
     padding: 176px;
     border-radius: 25px;
     background: rgb(224,224,224);
-    opacity: .3;
+    opacity: .1;
     
 }
 #sit {
@@ -180,9 +307,22 @@ background: rgb(247, 247, 247); /* Цвет фона */
     padding: 176px;
     border-radius: 25px;
     background: rgb(224, 224, 224);
-    opacity: .3;
+    opacity: .1;
     
     
+}
+#ff {
+    position: absolute;
+    left: 367px;
+    top: 4px;
+    display: none;
+    height: 54px;
+    width: 65px;
+
+
+
+
+
 }
 #cactus1 {
     width: 30px;
@@ -199,10 +339,9 @@ background: rgb(247, 247, 247); /* Цвет фона */
 
 #fe {
     position: absolute;
-    left: 100px;
-    top: 140px;
+    left: 127px;
+    top: 85px;
     font-size: 30px;
-
 
 }
 @keyframes gor {
