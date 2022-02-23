@@ -237,7 +237,7 @@
     left: 580px;
     }
 .cactusmov {
-    animation: cactusMov 2s infinite linear;
+    animation: cactusMov 3s infinite linear;
 }
 #f {
     position: absolute;

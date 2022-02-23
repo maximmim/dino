@@ -15,6 +15,7 @@ const dont3 = document.getElementById("dont3")
 
 const tg = document.getElementById("tg")
 
+
 let live = 3;
 
 let i = 1;
@@ -63,7 +64,7 @@ let isAlite = setInterval (function(){
 
 if (da == true) {
     if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) 
-    { alert("ТИ ПРОИГРАЛИ")
+    { alert("ТИ ПРОГРАВ, СПІВЧУВАЮ")
       document.location.replace('reset.html');
     }
 }
@@ -75,14 +76,14 @@ function logs() {
 }
 setTimeout(logs, 3000)
 
-  window.onload = function () {
-    document.body.classList.add('loaded_hiding');
-    window.setTimeout(function () {
-      document.body.classList.add('loaded');
-      document.body.classList.remove('loaded_hiding');
+window.onload = function () {
+document.body.classList.add('loaded_hiding');
+window.setTimeout(function () {
+document.body.classList.add('loaded');
+document.body.classList.remove('loaded_hiding');
     }, 500);
-  }
-  window.onload = function () {
+    }
+window.onload = function () {
     document.body.classList.add('loaded');
   }
 },10)
@@ -97,6 +98,7 @@ function toe() {
     
 
 }
+
 function teo() {
     dino.classList.add("jump")
     document.getElementById("jum").style.display = "block"
@@ -109,7 +111,8 @@ function teo() {
 function aw() {
 livee.classList.add("love");
 }
-toe();
+
+
 
 //if (live == 2) {
 //live1.style.display = "none"

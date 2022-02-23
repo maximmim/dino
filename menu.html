@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dino</title>
+    <title>Dino</title>   
+    <script>
+        function logs() {
+    document.getElementById("qqe").style.display = "none";
+    document.getElementById("addc").style.display = "block";
+}
+
+setTimeout(logs, 3000)
+
+    </script>
 </head>
 
 <style>
+
 #buthon {
     position: absolute;
     top: 130px;
@@ -68,10 +78,37 @@
     top: 190px;
     left: 490px;
 }
+#qqe {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 102px;
+    left: 311px;
+    animation: l 4s infinite linear;
+
+}
 #rq {
     position: absolute;
     top: 10px;
 }
+#addc {
+    display: none;
+}   
+@keyframes l {
+0% {
+    transform: rotate(-360deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+body {
+  width: 10px;
+  height: 301px;
+  background: linear-gradient(rgb(0, 225, 255), rgb(0, 89, 255));
+
+}
+
 @media screen and (orientation: portrait) {
 #ec {
    display: block;
@@ -83,11 +120,14 @@
   }</style>
 
 <body>
+<div ><img id="qqe" src="img/googe_dino.png"></div>
+
+      <div id="addc">
 <img id="rq" src="img/Без названия.png">
 <img id="fa" src="img/Без названия.png">
 <img id="feo" src="img/googe_dino.png">
 <img id="fea" src="img/googe_dinoda.png">
-<p id="adaqd">1.2v</p>
+<p id="adaqd">1.3v</p>
 <button onclick="document.location.replace('index.html')" id="buthon">Играть</button>
 <button onclick="document.getElementById('set').style.display = 'block'
                  document.getElementById('ew').style.display = 'block' " id="buthons">Настройки</button>
@@ -95,5 +135,6 @@
 document.getElementById('set').style.display = 'none' "></div>
 <p id="ew">Тут ничего нет</p>
 <p id="ec">Переверни телефон другой стороной Пожалусто</p>
+</div>
 </body>
 </html>
