@@ -122,9 +122,17 @@
     display: block;
     position: relative;
     top: 150px;
+}
+#din {
+    width: 48px;
+    height: 49px;
+    background-image: url(img/offline-sprite-dwx.png);
+    background-size: 47px 50px;
+    display: none;
+    position: relative;
+    top: 114px;
 
 }
-
 #dont1 {
     position: absolute;
     width: 45px;
@@ -218,14 +226,14 @@
     left: 220px;
     top: 40px;
     font-size: 30px;
-    display: none
+    
 }
 #www {
     position: absolute;
     left: 300px;
     top: 40px;
     font-size: 30px;
-    display: none;
+   
 }
 #cactus {
     width: 20px;
@@ -335,11 +343,30 @@ background: rgb(247, 247, 247); /* Цвет фона */
     left: 695px;
     animation: cactusMov 2s infinite linear;
 
+}  
+.iv {
+    width: 98px;
+    height: 43px;
+    top: 53px;
+    left: 349px;
+    background: rgb(255, 0, 0);
+    border: 3px solid #fff;
+    border-radius: 10px;
+    display: inline-block;
+    position: absolute;
 }
+
 
 #fe {
     position: absolute;
-    left: 127px;
+    left: 66px;
+    top: 2px;
+    font-size: 30px;
+
+}
+#fs {
+    position: absolute;
+    left: 527px;
     top: 85px;
     font-size: 30px;
 
