@@ -359,16 +359,30 @@ background: rgb(247, 247, 247); /* Цвет фона */
 
 #fe {
     position: absolute;
-    left: 66px;
+    left: 79px;
     top: 2px;
     font-size: 30px;
 
+}
+#qd {
+    position: absolute;
+    left: 25px;
+    top: -63px;
+
+
+}
+#af {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    font-size: 30px;
 }
 #fs {
     position: absolute;
     left: 527px;
     top: 85px;
     font-size: 30px;
+    display: none;
 
 }
 @keyframes gor {

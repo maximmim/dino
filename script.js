@@ -75,14 +75,14 @@ let isAlite = setInterval (function(){
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"))
 
 if (da == true) {
-    //if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) 
-    //{ 
-          
-    //    console.log("-1 Жизнь")   
-    //alert("ТИ ПРОГРАВ, СПІВЧУВАЮ");
-    //document.location.replace('reset.html');
-   // live = live - 1;
-   //}
+  if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) 
+  { 
+      
+   console.log("-1 Жизнь")   
+   //alert("ТИ ПРОГРАВ, СПІВЧУВАЮ");
+   //document.location.replace('reset.html');
+   live = live - 1;
+  }
 }
 
 if (live == 2) {
