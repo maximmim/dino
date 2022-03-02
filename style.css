@@ -123,6 +123,15 @@
     position: relative;
     top: 150px;
 }
+#demon {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/demon_dino.png);
+    background-size: 50px 50px;
+    display: none;
+    position: relative;
+    top: 150px;
+}
 #din {
     width: 48px;
     height: 49px;
@@ -201,6 +210,16 @@
     display: none;
 
 }
+#demondown {
+    width: 75px;
+    height: 36px;
+    background-image: url(img/T-Rex_Game..png);
+    background-size: 73px 37px;
+    position: relative;
+    top: 165px;
+    display: none;
+
+}
 #dinoh {
     width: 50px;
     height: 50px;
@@ -253,13 +272,29 @@
     top: -8px;
     width: 72px;
 }
-
+#obloko {
+    position: absolute;
+    left: 684px;
+    top: 111px;
+    width: 86px;
+    height: 25px;
+    background-image: url(img/x.png);
+    background-size: 78px 28px;
+    animation: cactusMov 17s infinite linear;
+}
+#perever {
+    position: absolute;
+    left: 38px;
+    top: 338px;
+    font-size: 60px;
+}
     
 #live {
-    width: 40px;
-    height: 40px;
-    background-image: url(img/live.png);
-    background-size: 41px 40px;
+    width: 44px;
+    /*display: none;*/
+    height: 53px;
+    background-image: url(img/din.png);
+    background-size: 43px 52px;
     position: absolute;
     top: 253px;
     left: 380px;
@@ -281,9 +316,14 @@
 .doc {    
     animation: gor 8s infinite linear;
  }
-
+#demod {
+    position: absolute;
+    left: 198px;
+    top: 0px;
+    display: none;
+}
     .love {
-    animation: love 4s infinite linear;
+    animation: love 0.1s infinite linear;
 }
 #hed {
     position: absolute;
@@ -395,10 +435,13 @@ background: rgb(247, 247, 247); /* Цвет фона */
 }
 @keyframes love {
 0% {
-    transform: rotate(360deg);
+    top: 253px;
+}
+80% {
+    top: 290px;
 }
 100% {
-    transform: rotate(-360deg);
+    display: none;
 }
 }
 @keyframes cactusMov {
@@ -486,4 +529,37 @@ background: rgb(247, 247, 247); /* Цвет фона */
         #qw:hover {
         background-position: right center;
         }
+        #eq {
+            position: absolute;
+            left: 90px;
+            top: 70px;
+    font-size: 60px;
+    animation: re 4s infinite linear;
+}
+        @keyframes re {
 
+            0% {
+                transform: rotate(-360deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @media screen and (orientation: portrait) {
+            #ec {
+               display: block;
+                }
+                #log {
+                    display: none;
+                }
+                
+              }
+              @media screen and (orientation:landscape) {
+                #ec {
+                   display: none;
+                    }
+                    #log {
+                        display: block;
+                    }
+                    
+                  }
