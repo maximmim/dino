@@ -6,26 +6,28 @@ const cactus = document.getElementById("cactus");
 const doc = document.getElementById("dac");
 const dinodown = document.getElementById("dinodown")
 let ii = 1;
+let da = true;
+let downn = false;
 const demondown = document.getElementById("demondown")
-let dem = false
+let dem = false;
 localStorage.setItem('dat', 1);
 let daw = localStorage.getItem('dat');
 const livee = document.getElementById("live")
 const live2 = document.getElementById("live2")
 const live3 = document.getElementById("live3")
-
 const dont1 = document.getElementById("dont1")
 const dont2 = document.getElementById("dont2")
 const dont3 = document.getElementById("dont3")
-
 const tg = document.getElementById("tg")
-
 console.log(localStorage.getItem('dat'))
 let live = 3;
-
 let i = 1;
-function updatea() {
 
+function updatea() {
+if (dino.style.display == "block" && demon.style.display == "block") {
+dino.style.display = "none"
+
+}
 }
 setInterval(updatea, 100)   
     
@@ -33,7 +35,12 @@ setInterval(updatea, 100)
 $("#www").text(live)
 function jump() {
 if(dino.classList != "jump" && dinodown.classList != "jump" && demon.classList != "jump"){
-        dino.classList.add("jump");
+    if (music == true) {
+    let audio = new Audio(); // Создаём новый элемент Audio
+    audio.src = 'audio/jump.mp3'; // Указываем путь к звуку "клика"
+    audio.autoplay = true; // Автоматически запускаем
+    }
+    dino.classList.add("jump");
         i++;    
         demon.classList.add("jump")
         $("#fs").text(localStorage.dat);
@@ -55,9 +62,10 @@ if(dino.classList != "jump" && dinodown.classList != "jump" && demon.classList !
     }, 700)
 
 }
-let da = true;
-let downn = false;
+
 function down() {
+
+
 
     if (dem == true) {
         cactus.style.top = "125px"
@@ -65,29 +73,37 @@ function down() {
         demondown.style.display = "block"
         setTimeout(demonof, 1000);
     }    
-    else {dino.style.display = "none"
+    else {
+    
+    dino.style.display = "none"
     dinodown.style.display = "block"
     cactus.style.top = "125px"
     setTimeout(downof, 1000)
-}
-}
 
+}
+}
+function v() {
+    dino.style.b
+}
 function downof() {
-    dino.style.display = "block"
-    dinodown.style.display = "none"
-    cactus.style.top = "110px"
+    dino.style.display = "block";
+    dinodown.style.display = "none";
+    cactus.style.top = "110px";
 }
 function demonof() {
-    demon.style.display = "block"
-    demondown.style.display = "none"
-    cactus.style.top = "110px"
+    demon.style.display = "block";
+    demondown.style.display = "none";
+    cactus.style.top = "110px";
 }
 function dn() {
     dino.style.display = "none";
     demon.style.display = "block";
-    dem = true;
-    document.getElementById("qd").style.display = "none"
-    document.getElementById("demod").style.display = "block"
+    dem = true;;
+    document.getElementById("ob").style.display = "block";
+    document.getElementById("obloko").style.display = "none";
+    document.getElementById("qd").style.display = "none";
+    document.getElementById("demod").style.display = "block";
+    dinodown.style.display = "none";
 }
 document.addEventListener('keydown', function(event){
     jump();
@@ -105,18 +121,18 @@ if (da == true) {
   if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) 
   { 
       
-   console.log("-1 Жизнь")   
+   //console.log("-1 Жизнь")   
    //alert("ТИ ПРОГРАВ, СПІВЧУВАЮ");
    //document.location.replace('reset.html');
-   live = live - 1;
+   //live = live - 1;
   }
   if (cactusLeft < 50 && cactusLeft > 0 && demonTop >= 140) 
   { 
       
-   console.log("-1 Жизнь")   
+   //console.log("-1 Жизнь")   
    //alert("ТИ ПРОГРАВ, СПІВЧУВАЮ");
    //document.location.replace('reset.html');
-   live = live - 1;
+   //live = live - 1;
   }
 }
 //метод проверки жизней 1

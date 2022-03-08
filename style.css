@@ -263,6 +263,7 @@
     top: 110px;
     left: 580px;
     }
+
 .cactusmov {
     animation: cactusMov 3s infinite linear;
 }
@@ -280,6 +281,18 @@
     height: 25px;
     background-image: url(img/x.png);
     background-size: 78px 28px;
+    animation: cactusMov 17s infinite linear;
+}
+
+#ob {
+    position: absolute;
+    left: 684px;
+    top: 111px;
+    width: 86px;
+    height: 25px;
+    background-image: url(img/xred.png);
+    background-size: 78px 28px;
+    display: none;
     animation: cactusMov 17s infinite linear;
 }
 #perever {
@@ -310,6 +323,17 @@
     top: 146px;
     opacity: .3;
     }
+    #d {
+        width: 40px;
+        height: 40px;
+        background-image: url(img/xred.png);
+        background-size: 41px 40px;
+        position: absolute;
+        left: 665px;
+        top: 146px;
+        opacity: .3;
+        }
+
 .log {
     display: none;
 }
@@ -399,7 +423,7 @@ background: rgb(247, 247, 247); /* Цвет фона */
 
 #fe {
     position: absolute;
-    left: 79px;
+    left: 72px;
     top: 2px;
     font-size: 30px;
 
