@@ -35,11 +35,11 @@ setInterval(updatea, 100)
 $("#www").text(live)
 function jump() {
 if(dino.classList != "jump" && dinodown.classList != "jump" && demon.classList != "jump"){
-    if (music == true) {
+    
     let audio = new Audio(); // Создаём новый элемент Audio
     audio.src = 'audio/jump.mp3'; // Указываем путь к звуку "клика"
     audio.autoplay = true; // Автоматически запускаем
-    }
+    
     dino.classList.add("jump");
         i++;    
         demon.classList.add("jump")
