@@ -1,3 +1,3 @@
-<?php include_once("/html/menu.html"); ?>
+<?php include_once("html/menu.html"); ?>
 
 
