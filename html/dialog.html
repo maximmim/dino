@@ -6,7 +6,7 @@
         #dino {
             width: 98px;
             height: 98px;
-            background-image: url(img/googe_dino.png);
+            background-image: url(/img/googe_dino.png);
             background-size: 102px 104px;
             display: block;
             position: absolute;
@@ -17,7 +17,7 @@
         #demon {
             width: 98px;
             height: 98px;
-            background-image: url(img/demon_dino.png);
+            background-image: url(/img/demon_dino.png);
             background-size: 102px 104px;
             display: block;
             position: absolute;
@@ -35,7 +35,7 @@
             left: 678px;
             top: 8px;
             background-size: 102px 104px;
-            background-image: url(img/offline-sprited-2x.png);
+            background-image: url(/img/offline-sprited-2x.png);
         }
 
         #d {
@@ -106,6 +106,21 @@
         left: 646px;
         top: 208px;
     }
+    #dont1 {
+        position: absolute;
+        left: 676px;
+        top: 248px;
+    }
+    #dont2 {
+        position: absolute;
+        left: 646px;
+        top: 248px;
+    }
+    #dont3 {
+        position: absolute;
+        left: 616px;
+        top: 248px;
+    }
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -138,11 +153,42 @@
             document.getElementById("dino").style.display = "none"
 
         }
+
+        function df() {
+            
+            document.getElementById("dino").style.top += "100px"
+
+        }
+        function df2() {
+            
+            document.getElementById("dino").style.top -= "100px"
+
+        }
+        function df3() {
+            
+            document.getElementById("dino").style.left -= "100px"
+
+        }
+        function df1() {
+            
+            document.getElementById("dino").style.left = "+100px"
+
+        }
     </script>
     <div id="demon"></div>
     <div id="da"></div>
     <button id="yes" onclick="fd()">ДА</button>
-    <button id="dont">Нет</button>
+    <button id="dont" onclick="df()">2 </button>
+    <button id="dont1" onclick="df1()">3</button>
+    <button id="dont2" onclick="df2()">4</button>
+    <button id="dont3" onclick="df3()">5</button>
+
+
+
+
+
+
+
     <div id="dino"></div>
     <p id="d">!КАР !КАР !КАР</p>
     <p id="dd">Хочеш на темною Сторону ?</p>

@@ -109,10 +109,12 @@
     display: none;
   }
 .game {
-    width: 600px;
-    border-bottom: 1px solid #000;
+    position: absolute;
+    width: 350px;
+    border-bottom: 4px solid #000;
     margin: auto;
     height: 200px;
+    top: 250px;
 }
 .buthon {
     width: 68px;
@@ -173,13 +175,13 @@
     
 }
 #dino {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
     background-image: url(/img/googe_dino.png);
-    background-size: 50px 50px;
+    background-size: 157px 150px;
     display: block;
     position: relative;
-    top: 150px;
+    top: 50px;
 }
 #dinowath {
     width: 50px;
@@ -365,12 +367,12 @@
    
 }
 #cactus {
-    width: 20px;
-    height: 40px;
+    width: 70px;
+    height: 100px;
     background-image: url(/img/Без\ названия.png);
-    background-size: 20px 40px;
+    background-size: 66px 99px;
     position: relative;
-    top: 110px;
+    top: -50px;
     left: 580px;
     }
 
@@ -490,12 +492,12 @@ background: rgb(247, 247, 247); /* Цвет фона */
 }
 #jum {
     position: absolute;
-    top: -3px;
-    width: -36px;
-    left: 455px;
-    height: -33px;
-    padding: 176px;
+    top: -243px;
+    width: 330px;
+    left: 5px;
+    height: 787px;
     border-radius: 25px;
+    
     background: rgb(224,224,224);
     opacity: .1;
     
@@ -604,7 +606,7 @@ background: rgb(247, 247, 247); /* Цвет фона */
 }
 @keyframes cactusMov {
     0% {
-        left: 580px;
+        left: 350px;
     }
     100% {
         left:-20px;
@@ -619,35 +621,35 @@ background: rgb(247, 247, 247); /* Цвет фона */
     }
 }
 .jump {
-    animation: jump 0.5s linear;
+    animation: jump 1s linear;
 }
 @keyframes jump {
     0% {
-        top: 150px;
+        top: 50px;
     }
     10% {
-        top: 140px;
+        top: 40px;
     }
     30% {
-        top: 130px;
+        top: 10px;
     }
     40% {
-        top: 100px;
+        top: -90px;
     }
     50% {
-        top:70px;
+        top:-200px;
     }
     60% {
-        top: 100px;
+        top: -90px;
     }
     80% {
-        top: 130px;
+        top: 10px;
     }
     90% {
-        top: 140px;
+        top: 40px;
     }
     100% {
-        top:150px;
+        top:50px;
     }
 }
 
@@ -686,38 +688,6 @@ background: rgb(247, 247, 247); /* Цвет фона */
           }
         #qw:hover {
         background-position: right center;
-        }
-        #eq {
-            position: absolute;
-            left: 90px;
-            top: 70px;
-    font-size: 60px;
-    animation: re 4s infinite linear;
-}
-        @keyframes re {
 
-            0% {
-                transform: rotate(-360deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
+
         }
-        @media screen and (orientation: portrait) {
-            #ec {
-               display: block;
-                }
-                #log {
-                    display: none;
-                }
-                
-              }
-              @media screen and (orientation:landscape) {
-                #ec {
-                   display: none;
-                    }
-                    #log {
-                        display: block;
-                    }
-                    
-                  }

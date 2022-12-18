@@ -28,17 +28,6 @@ let b = false;
 
 
 
-
-setInterval(() => {
-dino.style.backgroundImage = "url(/img/googe_dno.png)";
-}, 500);
-
-setInterval(() => {
-    dino.style.backgroundImage = "url(/img/ge_dino.png)";
-}, 1000);
-
-start()
-
 setInterval(update, 20); 
 
 
@@ -51,10 +40,8 @@ if (dino.style.display == "block" && demon.style.display == "block") {
 dino.style.display = "none"
 
 }
-console.log(live)
-if (skino == "s2") {
-    dino.style.backgroundImage = "url(/img/gop_dino.png)";
-    }
+
+
 
     } 
 //setInterval(animrun, 400)
@@ -108,7 +95,7 @@ if(dino.classList != "jump" && dinodown.classList != "jump" && demon.classList !
     audio.src = '/audio/jump.mp3'; // Указываем путь к звуку 
     audio.autoplay = true; // Автоматически запускаем
     }
-    
+
     dino.classList.add("jump");
           
         demon.classList.add("jump")
@@ -117,7 +104,6 @@ if(dino.classList != "jump" && dinodown.classList != "jump" && demon.classList !
         dinodown.classList.add("jump");
         dino.style.display = "block";
         dinodown.style.display = "none";
-        cactus.style.top = "110px";
         jum = false;
     }
     setTimeout(function(){
@@ -136,7 +122,7 @@ function startq() {
     document.getElementById("skins").style.display = "none"
     document.getElementById("games").style.display = "block"
     
-    
+
 }
 
 function gop_dino() { 
@@ -245,13 +231,22 @@ if (da == true) {
    //document.location.replace('reset.html');
    
    
+   live = live - 1;
+  }
+  if (cactusLeft < 50 && cactusLeft > 0 && demonTop >= 140) 
+  { 
+      
+   //console.log("-1 Жизнь")   
+   //alert("ТИ ПРОГРАВ, СПІВЧУВАЮ");
+   //document.location.replace('reset.html');
+   
+   
    //live = live - 1;
   }
-
 }
 
 //метод проверки жизней 1
-if (live < 2) {
+if (live == 2) {
 
 document.getElementById("heal").style.display = "none"
 document.getElementById("dheal").style.display = "block"
@@ -270,7 +265,7 @@ function dawd() {
 document.getElementById("dheal").style.display = "none"
 }
 //метод проверки жизек а потом смерть
-if (live < 1) {
+if (live == 1) {
     da = false
     setTimeout(dawd, 900)
     setTimeout(daa,4000)
@@ -285,10 +280,10 @@ document.getElementById("dheal").style.display = "block"
 
 
 
-if (i == 1000) {
+if (i == 10000) {
     dn()
 }
-if (live <= 0) {
+if (live == 0) {
 //document.getElementById("heal").style.display = "none"
 //document.getElementById("dheal").style.display = "block"
 //document.getElementById("reset").style.display = "block"
@@ -387,6 +382,7 @@ function w() {
 function d() {
     da = true;
 }
+
 
 
 
