@@ -245,7 +245,7 @@ if (da == true) {
    //document.location.replace('reset.html');
    
    
-   //live = live - 1;
+   live = live - 1;
   }
 
 }
